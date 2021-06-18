@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints the phrase
+ * main : prints the phrase
  * return : always 0
  */
 
