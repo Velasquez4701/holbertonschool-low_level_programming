@@ -2,10 +2,11 @@
 #include <stdlib.h>
 #include <time.h>
 
-/*
+/**
  * main - last digit of the number
+ *
  * Return: 0 Always
-*/
+ */
 
 int main(void)
 {
