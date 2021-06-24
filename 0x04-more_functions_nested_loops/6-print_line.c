@@ -1,19 +1,18 @@
 #include "holberton.h"
 
 /**
- * print_line - print to the line
+ * print_line - draws a straight line
  * @n: number
  */
 void print_line(int n)
 {
 	int a;
 
-	if (a > 0)
+	if (n > 0)
 	{
 		for (a = 0; a < n; a++)
-		{
 			_putchar('_');
-		}
 	}
+
 	_putchar('\n');
 }
