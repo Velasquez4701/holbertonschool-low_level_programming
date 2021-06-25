@@ -1,4 +1,4 @@
-include "holberton.h"
+#include "holberton.h"
 
 /**
   * print_triangle - Prints a triangle of squares according parameter
