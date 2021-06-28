@@ -4,11 +4,12 @@
 /**
  * _strlen - length of a string
  * @s: parameter
- * Return: s
+ * Return: l
  */
 int _strlen(char *s)
 {
-	int length;
+	int l;
 
-	length = strlen(s);
+	l = strlen(s);
+	return (l);
 }
