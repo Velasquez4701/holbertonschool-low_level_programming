@@ -5,7 +5,7 @@
  * @str: string
  * Return: half of a string
  */
-Void puts_half(char *str)
+void puts_half(char *str)
 {
 	int index = 0;
 	int a;
@@ -18,7 +18,7 @@ Void puts_half(char *str)
 	if (index % 2 == 1)
 	{
 		a = (index - 1) / 2;
-		a++;
+		a += 1;
 	}
 	else
 	{
