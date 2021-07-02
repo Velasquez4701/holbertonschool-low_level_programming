@@ -2,11 +2,11 @@
 #include <string.h>
 
 /**
- * _strcat - concatenates two string
- * @dest: destination string
- * @src: source string
+ * _strcat - Concatenate strings
+ * @dest: First string
+ * @src: Second string
  *
- * Return: string dest
+ * Return: Concatenation
  */
 char *_strcat(char *dest, char *src)
 {
