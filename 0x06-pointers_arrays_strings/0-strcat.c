@@ -10,14 +10,16 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int index = strlen(dest);
+	int l = strlen(dest);
+	int i = l;
 
 	while (*src)
 	{
-		dest[index] = *src;
+		dest[i] = *src;
 		src++;
-		index++;
+		i++;
 	}
-	dest[index] = '\0';
+
+	dest[i] = '\0';
 	return (dest);
 }
