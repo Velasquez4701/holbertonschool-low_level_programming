@@ -1,31 +1,39 @@
 #include "holberton.h"
 
 /**
- * is_prime_number - Function that returns if the number is a prime
- * @n: Number to evaluate if it is a prime number
- *
- * Return: 1 - Prime number | 0 - Not prime number.
+ * find_prime - Find prime
+ * @x: number
+ * @y: Iterator
+ * Return: 0 or 1
  */
-int is_prime_number(int n)
+
+int find_prime(int x, int y)
 {
-	return (get_prime(n, 2));
+	if (x < 2)
+	{
+		return (0);
+	}
+	if (y * y > x)
+	{
+		return (1);
+	}
+	if (x % y == 0)
+	{
+		return (0);
+	}
+	else
+	{
+		return (find_prime(x, y + 1));
+	}
 }
 
 /**
- * get_prime - Get the square root recursively
- * @n: Number to evaluate if it is a prime number
- * @i: Iterator
- *
- * Return: 1 - Prime number | 0 - Not prime number.
+ * is_prime_number - Find prime
+ * @n: number
+ * Return: 0 or 1
  */
-int get_prime(int n, int i)
-{
-	if (n < 2)
-		return (0);
-	else if (n % i == 0 && i != n)
-		return (0);
-	else if (i == n)
-		return (1);
 
-	return (get_prime(n, i + 1));
+int is_prime_number(int n)
+{
+	return (find_prime(n, 2));
 }
