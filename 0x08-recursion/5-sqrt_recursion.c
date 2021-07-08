@@ -29,7 +29,7 @@ int find_square(int x, int y)
  * @n: number
  * Return: find square
  */
-int _sqrt_recursion(int n);
+int _sqrt_recursion(int n)
 {
 	return (find_square(n, 1));
 }
