@@ -12,8 +12,7 @@ int find_square(int x, int y)
 
 	if (square > x)
 		return (-1);
-
-	if (square == x)
+	else if (square == x)
 		return (y);
 	else
 		return (find_square(x, y + 1));
