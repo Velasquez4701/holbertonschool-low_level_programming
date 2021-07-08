@@ -11,11 +11,17 @@ int find_square(int x, int y)
 	int square = y * y;
 
 	if (square > x)
+	{
 		return (-1);
+	}
 	else if (square == x)
+	{
 		return (y);
+	}
 	else
+	{
 		return (find_square(x, y + 1));
+	}
 }
 
 /**
