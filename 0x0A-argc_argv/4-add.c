@@ -4,10 +4,8 @@
 
 /**
  * main - entry point for program
- *
  * @argc: argument
  * @argv: pointer
- *
  * Return: sum
  */
 int main(int argc, char *argv[])
@@ -16,7 +14,7 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		if (!atoi(argv[i])) /* non numeric */
+		if (!atoi(argv[i]))
 		{
 			printf("Error\n");
 			return (1);
